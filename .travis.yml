@@ -11,6 +11,7 @@ after_success:
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
 deploy:
-  provider: Hunterina
-  app: citest2
-  
+  provider: heroku
+  app: "citest2"
+  api_key:
+    secure: "ac5dcdb8-79a3-4611-a3e2-a54d160ab5c3"
