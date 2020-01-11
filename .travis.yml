@@ -12,8 +12,6 @@ after_success:
 
 deploy:
   provider: heroku
-  app: 
-    master: my-staging-application
-    production: my-production-application
+
   api_key:
     secure: "ac5dcdb8-79a3-4611-a3e2-a54d160ab5c3"
